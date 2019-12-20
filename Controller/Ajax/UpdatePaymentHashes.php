@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Controller\Ajax;
+namespace Brunoetap\Gateway\Controller\Ajax;
 use Magento\Framework\Controller\ResultFactory;
 
 /**
@@ -9,7 +9,7 @@ use Magento\Framework\Controller\ResultFactory;
  * @author    Sixbank (and others) 
  * @copyright 2018-2019 Sixbank
  * @license   https://www.gnu.org/licenses/gpl-3.0.pt-br.html GNU GPL, version 3
- * @package   Sixbank\Gateway\Controller\Ajax
+ * @package   Brunoetap\Gateway\Controller\Ajax
  */
 class UpdatePaymentHashes extends \Magento\Framework\App\Action\Action
 {

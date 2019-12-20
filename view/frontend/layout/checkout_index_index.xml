@@ -6,7 +6,7 @@
             <block class="Magento\Framework\View\Element\Messages" name="messages" as="messages" template="Magento_Theme::messages.phtml"/>
         </referenceContainer>
         <referenceContainer name="after.body.start">            
-            <block class="Magento\Framework\View\Element\Template" name="beforebody" template="Sixbank_Gateway::prepareGateway.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="beforebody" template="Brunoetap_Gateway::prepareGateway.phtml"/>
         </referenceContainer>
         <referenceBlock name="checkout.root">
             <arguments>
@@ -25,7 +25,7 @@
                                                             <!-- merge payment method renders here -->
                                                             <item name="children" xsi:type="array">
                                                                 <item name="rm_gateway_cc_payments" xsi:type="array">
-                                                                    <item name="component" xsi:type="string">Sixbank_Gateway/js/view/payment/rm_gateway_cc</item>
+                                                                    <item name="component" xsi:type="string">Brunoetap_Gateway/js/view/payment/rm_gateway_cc</item>
                                                                     <item name="methods" xsi:type="array">
                                                                         <item name="rm_gateway_cc" xsi:type="array">
                                                                             <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
@@ -33,7 +33,7 @@
                                                                     </item>
                                                                 </item>
 																<item name="rm_gateway_boleto_payments" xsi:type="array">
-                                                                    <item name="component" xsi:type="string">Sixbank_Gateway/js/view/payment/rm_gateway_boleto</item>
+                                                                    <item name="component" xsi:type="string">Brunoetap_Gateway/js/view/payment/rm_gateway_boleto</item>
                                                                     <item name="methods" xsi:type="array">
                                                                         <item name="rm_gateway_boleto" xsi:type="array">
                                                                             <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
@@ -41,7 +41,7 @@
                                                                     </item>
                                                                 </item>
                                                                 <item name="rm_gateway_cd_payments" xsi:type="array">
-                                                                    <item name="component" xsi:type="string">Sixbank_Gateway/js/view/payment/rm_gateway_cd</item>
+                                                                    <item name="component" xsi:type="string">Brunoetap_Gateway/js/view/payment/rm_gateway_cd</item>
                                                                     <item name="methods" xsi:type="array">
                                                                         <item name="rm_gateway_cd" xsi:type="array">
                                                                             <item name="isBillingAddressRequired" xsi:type="boolean">true</item>
@@ -49,7 +49,7 @@
                                                                     </item>
                                                                 </item>
                                                                 <item name="rm_gateway_tef_payments" xsi:type="array">
-                                                                    <item name="component" xsi:type="string">Sixbank_Gateway/js/view/payment/rm_gateway_tef</item>
+                                                                    <item name="component" xsi:type="string">Brunoetap_Gateway/js/view/payment/rm_gateway_tef</item>
                                                                     <item name="methods" xsi:type="array">
                                                                         <item name="rm_gateway_tef" xsi:type="array">
                                                                             <item name="isBillingAddressRequired" xsi:type="boolean">true</item>

@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Controller\Ajax;
+namespace Brunoetap\Gateway\Controller\Ajax;
 use Magento\Framework\Controller\ResultFactory;
 
 foreach (glob(dirname(dirname(dirname(__FILE__)))."/vendor/brunopaz/php-sdk-gateway/src/gateway/API/*.php") as $filename)
@@ -25,7 +25,7 @@ use \Gateway\API\Acquirers as Acquirers;
  * @author    Sixbank (and others) 
  * @copyright 2018-2019 Sixbank
  * @license   https://www.gnu.org/licenses/gpl-3.0.pt-br.html GNU GPL, version 3
- * @package   Sixbank\Gateway\Controller\Ajax
+ * @package   Brunoetap\Gateway\Controller\Ajax
  */
 class TransactionData extends \Magento\Framework\App\Action\Action
 {
@@ -42,7 +42,7 @@ class TransactionData extends \Magento\Framework\App\Action\Action
     /**
      * Gateway Helper
      *
-     * @var Sixbank\Gateway\Helper\Data;
+     * @var Brunoetap\Gateway\Helper\Data;
      */ 
     protected $gatewayHelper;
 
@@ -54,7 +54,7 @@ class TransactionData extends \Magento\Framework\App\Action\Action
     public function __construct(
         \Magento\Checkout\Model\Session $checkoutSession,
         \Magento\Framework\App\Action\Context $context,
-        \Sixbank\Gateway\Helper\Data $gatewayHelper,
+        \Brunoetap\Gateway\Helper\Data $gatewayHelper,
         \Magento\Framework\Serialize\SerializerInterface $serializer
  
     ) {

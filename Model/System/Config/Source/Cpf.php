@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Model\System\Config\Source;
+namespace Brunoetap\Gateway\Model\System\Config\Source;
 
 /**
  * Class Cpf
@@ -8,20 +8,20 @@ namespace Sixbank\Gateway\Model\System\Config\Source;
  * @author    Sixbank (and others) 
  * @copyright 2018-2019 Sixbank
  * @license   https://www.gnu.org/licenses/gpl-3.0.pt-br.html GNU GPL, version 3
- * @package   Sixbank\Gateway\Model\System\Config\Source
+ * @package   Brunoetap\Gateway\Model\System\Config\Source
  */
 class Cpf implements \Magento\Framework\Option\ArrayInterface
 {
     /**
-     * @var \Sixbank\Gateway\Helper\Internal
+     * @var \Brunoetap\Gateway\Helper\Internal
      */
     protected $gatewayHelper;
 
     /**
-     * @param \Sixbank\Gateway\Helper\Internal $gatewayHelper
+     * @param \Brunoetap\Gateway\Helper\Internal $gatewayHelper
      */
     public function __construct(
-            \Sixbank\Gateway\Helper\Internal $gatewayHelper
+            \Brunoetap\Gateway\Helper\Internal $gatewayHelper
     ){
         $this->gatewayHelper = $gatewayHelper;
     }

@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Model\System\Config\Source;
+namespace Brunoetap\Gateway\Model\System\Config\Source;
 
 use Magento\Eav\Model\Entity\Attribute\Source\AbstractSource;
 

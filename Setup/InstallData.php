@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Setup;
+namespace Brunoetap\Gateway\Setup;
 use Magento\Eav\Setup\EavSetup;
 use Magento\Eav\Setup\EavSetupFactory;
 use Magento\Framework\Setup\InstallDataInterface;
@@ -27,7 +27,7 @@ class InstallData implements InstallDataInterface
                 'label' => 'Todo(a)',
                 'input' => 'select',
                 'class' => '',
-                'source' => 'Sixbank\Gateway\Model\System\Config\Source\SubscriptionPeriodoOptions',
+                'source' => 'Brunoetap\Gateway\Model\System\Config\Source\SubscriptionPeriodoOptions',
                 'global' => \Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface::SCOPE_GLOBAL,
                 'visible' => true,
                 'required' => false,

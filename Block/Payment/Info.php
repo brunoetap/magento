@@ -1,6 +1,6 @@
 <?php
 
-namespace Sixbank\Gateway\Block\Payment;
+namespace Brunoetap\Gateway\Block\Payment;
 
 class Info extends \Magento\Payment\Block\Info
 {
@@ -8,14 +8,14 @@ class Info extends \Magento\Payment\Block\Info
     protected $_orderFactory;
     protected $_scopeConfig;
 
-    protected $_template = 'Sixbank_Gateway::info/info.phtml';
+    protected $_template = 'Brunoetap_Gateway::info/info.phtml';
     protected $gatewayHelper;
 
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
         \Magento\Checkout\Model\Session $checkoutSession,
         \Magento\Sales\Model\OrderFactory $orderFactory,
-        \Sixbank\Gateway\Helper\Data $gatewayHelper,
+        \Brunoetap\Gateway\Helper\Data $gatewayHelper,
         array $data = []
     ) {
 		parent::__construct($context, $data);

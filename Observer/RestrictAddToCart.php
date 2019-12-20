@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Observer;
+namespace Brunoetap\Gateway\Observer;
  
 use Magento\Framework\Event\ObserverInterface;
 use Magento\Framework\App\RequestInterface;

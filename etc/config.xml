@@ -6,7 +6,7 @@
                 <active>1</active>
                 <title>Cartão de Crédito</title>
                 <payment_action>authorize</payment_action>
-                <model>Sixbank\Gateway\Model\Method\Cc</model>                
+                <model>Brunoetap\Gateway\Model\Method\Cc</model>                
                 <order_status>pending</order_status>
                 <acquirer>gateway</acquirer>
                 <soft_descriptor>SIXBANK</soft_descriptor>
@@ -23,7 +23,7 @@
             <rm_gateway_cd>
                 <active>1</active>
                 <payment_action>order</payment_action>
-                <model>Sixbank\Gateway\Model\Method\Cd</model>
+                <model>Brunoetap\Gateway\Model\Method\Cd</model>
                 <title>Cartão de Débito</title>
                 <order_status>pending</order_status>
                 <acquirer>gateway</acquirer>                      
@@ -36,7 +36,7 @@
             </rm_gateway_cd>
             <rm_gateway>
                 <title>Sixbank</title>
-                <model>Sixbank\Gateway\Model\Payment</model>
+                <model>Brunoetap\Gateway\Model\Payment</model>
                 <ambiente>teste</ambiente>
                 <merchant_id>1</merchant_id>
                 <merchant_key>XXX</merchant_key>
@@ -51,7 +51,7 @@
                 <acquirer>bradesco</acquirer>
                 <order_status>holded</order_status>
                 <sort_order>2</sort_order>
-                <model>Sixbank\Gateway\Model\Method\Boleto</model>                
+                <model>Brunoetap\Gateway\Model\Method\Boleto</model>                
                 <show_min_value>0</show_min_value>
                 <slip_expire>1</slip_expire>
                 <instructions>Não receber após vencimento</instructions> 
@@ -63,7 +63,7 @@
                 <title>Gateway - TEF - Sixbank</title>
                 <order_status>holded</order_status>
                 <sort_order>2</sort_order>
-                <model>Sixbank\Gateway\Model\Method\Tef</model>                                
+                <model>Brunoetap\Gateway\Model\Method\Tef</model>                                
                 <show_min_value>0</show_min_value>
                 <payment_desc>Autorize seu pagamento abaixo</payment_desc>
             </rm_gateway_tef>

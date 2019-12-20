@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Helper;
+namespace Brunoetap\Gateway\Helper;
 
 /**
  * Class Logger
@@ -8,7 +8,7 @@ namespace Sixbank\Gateway\Helper;
  * @author    Sixbank (and others) 
  * @copyright 2018-2019 Sixbank
  * @license   https://www.gnu.org/licenses/gpl-3.0.pt-br.html GNU GPL, version 3
- * @package   Sixbank\Gateway\Helper
+ * @package   Brunoetap\Gateway\Helper
  */
 class Logger extends \Magento\Framework\App\Helper\AbstractHelper
 {

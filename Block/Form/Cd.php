@@ -1,10 +1,10 @@
 <?php
-namespace Sixbank\Gateway\Block\Form;
+namespace Brunoetap\Gateway\Block\Form;
 
 class Cd extends \Magento\Payment\Block\Form
 {
     /**
      * @var string
      */
-    protected $_template = 'Sixbank_Gateway::form/cd.phtml';
+    protected $_template = 'Brunoetap_Gateway::form/cd.phtml';
 }

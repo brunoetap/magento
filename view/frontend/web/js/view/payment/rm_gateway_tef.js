@@ -11,7 +11,7 @@ define(
         rendererList.push(
             {
                 type: 'rm_gateway_tef',
-                component: 'Sixbank_Gateway/js/view/payment/method-renderer/rm_gateway_tefmethod'
+                component: 'Brunoetap_Gateway/js/view/payment/method-renderer/rm_gateway_tefmethod'
             }
         );
         /** Add view logic here if needed */

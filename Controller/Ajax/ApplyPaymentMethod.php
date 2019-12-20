@@ -1,6 +1,6 @@
 <?php
 
-namespace Sixbank\Gateway\Controller\Ajax;
+namespace Brunoetap\Gateway\Controller\Ajax;
 
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\Controller\Result\ForwardFactory;

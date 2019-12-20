@@ -11,7 +11,7 @@ define(
 
         return Component.extend({
             defaults: {
-                template: 'Sixbank_Gateway/payment/rm_gateway_boleto'
+                template: 'Brunoetap_Gateway/payment/rm_gateway_boleto'
             },
 
             getCode: function() {

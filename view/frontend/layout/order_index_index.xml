@@ -2,7 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>    	
         <referenceContainer name="content">
-            <block class="Sixbank\Gateway\Block\Order" name="sixbank_gateway_order" template="Sixbank_Gateway::order.phtml"></block>
+            <block class="Brunoetap\Gateway\Block\Order" name="Brunoetap_Gateway_order" template="Brunoetap_Gateway::order.phtml"></block>
         </referenceContainer>        
     </body>
 </page>

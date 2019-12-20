@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Logger\Handler;
+namespace Brunoetap\Gateway\Logger\Handler;
 use Monolog\Logger;
 use Magento\Framework\Logger\Handler\Base;
 
@@ -10,7 +10,7 @@ use Magento\Framework\Logger\Handler\Base;
  * @author    Sixbank (and others) 
  * @copyright 2018-2019 Sixbank
  * @license   https://www.gnu.org/licenses/gpl-3.0.pt-br.html GNU GPL, version 3
- * @package   Sixbank\Gateway\Logger\Handler
+ * @package   Brunoetap\Gateway\Logger\Handler
  */
 class Custom extends Base
 {

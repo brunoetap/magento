@@ -11,7 +11,7 @@ define(
         rendererList.push(
             {
                 type: 'rm_gateway_boleto',
-                component: 'Sixbank_Gateway/js/view/payment/method-renderer/rm_gateway_boletomethod'
+                component: 'Brunoetap_Gateway/js/view/payment/method-renderer/rm_gateway_boletomethod'
             }
         );
         /** Add view logic here if needed */

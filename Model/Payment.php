@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Model;
+namespace Brunoetap\Gateway\Model;
 
 /**
  * Class Payment
@@ -8,14 +8,14 @@ namespace Sixbank\Gateway\Model;
  * @author    Sixbank (and others) 
  * @copyright 2018-2019 Sixbank
  * @license   https://www.gnu.org/licenses/gpl-3.0.pt-br.html GNU GPL, version 3
- * @package   Sixbank\Gateway\Model
+ * @package   Brunoetap\Gateway\Model
  */
 class Payment extends \Magento\Payment\Model\Method\Cc
 {
     /**
      * @var string
      */
-    protected $_formBlockType = \Sixbank\Gateway\Block\Form\Cc::class;
+    protected $_formBlockType = \Brunoetap\Gateway\Block\Form\Cc::class;
 
     const CODE = 'rm_gateway_cc';
 
@@ -34,14 +34,14 @@ class Payment extends \Magento\Payment\Model\Method\Cc
     /**
      * Gateway Helper
      *
-     * @var Sixbank\Gateway\Helper\Data;
+     * @var Brunoetap\Gateway\Helper\Data;
      */ 
     protected $gatewayHelper;
 
     /**
      * Gateway Abstract Model
      *
-     * @var Sixbank\Gateway\Model\Notifications
+     * @var Brunoetap\Gateway\Model\Notifications
      */ 
     protected $gatewayAbModel;
 
@@ -64,8 +64,8 @@ class Payment extends \Magento\Payment\Model\Method\Cc
         \Magento\Framework\Module\ModuleListInterface $moduleList,
         \Magento\Framework\Stdlib\DateTime\TimezoneInterface $localeDate,
         \Magento\Directory\Model\CountryFactory $countryFactory,
-        \Sixbank\Gateway\Helper\Data $gatewayHelper,
-        \Sixbank\Gateway\Model\Notifications $gatewayAbModel,
+        \Brunoetap\Gateway\Helper\Data $gatewayHelper,
+        \Brunoetap\Gateway\Model\Notifications $gatewayAbModel,
         \Magento\Backend\Model\Auth\Session $adminSession,
         array $data = array()
     ) {

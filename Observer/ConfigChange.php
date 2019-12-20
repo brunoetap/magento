@@ -1,6 +1,6 @@
 <?php 
 
-namespace Sixbank\Gateway\Observer;
+namespace Brunoetap\Gateway\Observer;
 
 use Magento\Framework\Event\ObserverInterface;
 use Magento\Framework\Event\Observer as EventObserver;
@@ -15,7 +15,7 @@ class ConfigChange implements ObserverInterface
 	public function __construct(
 		RequestInterface $request,
 		WriterInterface $configWriter,
-		\Sixbank\Gateway\Helper\Data $gatewayHelper
+		\Brunoetap\Gateway\Helper\Data $gatewayHelper
 	)
 	{
 		$this->request = $request;

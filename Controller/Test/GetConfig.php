@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Controller\Test;
+namespace Brunoetap\Gateway\Controller\Test;
 
 /**
  * Class GetConfig
@@ -8,7 +8,7 @@ namespace Sixbank\Gateway\Controller\Test;
  * @author    Sixbank (and others) 
  * @copyright 2018-2019 Sixbank
  * @license   https://www.gnu.org/licenses/gpl-3.0.pt-br.html GNU GPL, version 3
- * @package   Sixbank\Gateway\Controller\Test
+ * @package   Brunoetap\Gateway\Controller\Test
  */
 class GetConfig extends \Magento\Framework\App\Action\Action
 {
@@ -27,7 +27,7 @@ class GetConfig extends \Magento\Framework\App\Action\Action
      */
     public function __construct(
         \Magento\Framework\App\Action\Context $context,
-        \Sixbank\Gateway\Helper\Data $helper,
+        \Brunoetap\Gateway\Helper\Data $helper,
         \Magento\Framework\Controller\Result\JsonFactory $jsonFactory
     )
     {
@@ -47,7 +47,7 @@ class GetConfig extends \Magento\Framework\App\Action\Action
         $tokenLen = strlen($this->_helper->getToken());
         $info = array(
             'Magento Version' => substr($this->_helper->getMagentoVersion(), 0, 1),
-            'Sixbank_Gateway' => array(
+            'Brunoetap_Gateway' => array(
                 'version'   => $this->_helper->getModuleInformation()['setup_version'],
                 'debug'     => (boolean)$this->_helper->isDebugActive()
             ),

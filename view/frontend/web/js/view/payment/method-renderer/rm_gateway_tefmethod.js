@@ -11,7 +11,7 @@ define(
 
         return Component.extend({
             defaults: {
-                template: 'Sixbank_Gateway/payment/rm_gateway_tef'                
+                template: 'Brunoetap_Gateway/payment/rm_gateway_tef'                
             },
 
             getCode: function() {

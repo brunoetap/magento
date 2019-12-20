@@ -2,7 +2,7 @@
 
 ### Instalação
  
-    composer require sixbank/gateway:master
+    composer require Brunoetap/Gateway:master
     bin/magento cache:clean
     bin/magento setup:upgrade
     bin/magento setup:di:compile

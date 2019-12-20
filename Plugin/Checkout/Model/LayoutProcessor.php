@@ -1,6 +1,6 @@
 <?php
 
-namespace Sixbank\Gateway\Plugin\Checkout\Model;
+namespace Brunoetap\Gateway\Plugin\Checkout\Model;
 
 use Magento\Checkout\Block\Checkout\LayoutProcessor as ChekcoutLayerprocessor;
 
@@ -9,7 +9,7 @@ class LayoutProcessor
     protected $dataHelper;
 
     public function __construct(
-        \Sixbank\Gateway\Helper\Data $dataHelper
+        \Brunoetap\Gateway\Helper\Data $dataHelper
     ) {
 
         $this->dataHelper = $dataHelper;

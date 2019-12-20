@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Model;
+namespace Brunoetap\Gateway\Model;
 
 foreach (glob(dirname(dirname(__FILE__))."/vendor/brunopaz/php-sdk-gateway/src/gateway/API/*.php") as $filename)
 {   
@@ -22,14 +22,14 @@ use \Gateway\API\Acquirers as Acquirers;
  * @author    Sixbank (and others) 
  * @copyright 2018-2019 Sixbank
  * @license   https://www.gnu.org/licenses/gpl-3.0.pt-br.html GNU GPL, version 3
- * @package   Sixbank\Gateway\Model
+ * @package   Brunoetap\Gateway\Model
  */
 class Notifications extends \Magento\Payment\Model\Method\AbstractMethod
 {
     /**
      * Gateway Helper
      *
-     * @var Sixbank\Gateway\Helper\Data;
+     * @var Brunoetap\Gateway\Helper\Data;
      */ 
     protected $gatewayHelper;
 
@@ -68,7 +68,7 @@ class Notifications extends \Magento\Payment\Model\Method\AbstractMethod
         \Magento\Framework\Module\ModuleListInterface $moduleList,
         \Magento\Framework\Stdlib\DateTime\TimezoneInterface $localeDate,
         \Magento\Directory\Model\CountryFactory $countryFactory,
-        \Sixbank\Gateway\Helper\Data $gatewayHelper,
+        \Brunoetap\Gateway\Helper\Data $gatewayHelper,
         \Magento\Sales\Api\Data\OrderInterface $orderModel,
         \Magento\Framework\DB\Transaction $transactionFactory,
         \Magento\Sales\Model\Order\Email\Sender\OrderCommentSender $commentSender,

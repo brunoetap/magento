@@ -1,10 +1,10 @@
 <?php
-namespace Sixbank\Gateway\Block\Form;
+namespace Brunoetap\Gateway\Block\Form;
 
 class Boleto extends \Magento\Payment\Block\Form
 {
     /**
      * @var string
      */
-    protected $_template = 'Sixbank_Gateway::form/boleto.phtml';
+    protected $_template = 'Brunoetap_Gateway::form/boleto.phtml';
 }

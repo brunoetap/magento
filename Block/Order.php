@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Block;
+namespace Brunoetap\Gateway\Block;
 class Order extends \Magento\Framework\View\Element\Template
 {
     public function _prepareLayout()

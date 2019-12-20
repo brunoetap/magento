@@ -1,15 +1,15 @@
 var config = {
     map: {
         '*': {
-            'Magento_Checkout/js/model/place-order':'Sixbank_Gateway/js/model/place-order',
+            'Magento_Checkout/js/model/place-order':'Brunoetap_Gateway/js/model/place-order',
             'Magento_Checkout/js/action/select-payment-method':
-                'Sixbank_Gateway/js/action/select-payment-method'
+                'Brunoetap_Gateway/js/action/select-payment-method'
         }
     },
     config: {
         mixins: {
-            'Sixbank_Gateway/js/validation': {
-                'Sixbank_Gateway/js/validation-mixin': true
+            'Brunoetap_Gateway/js/validation': {
+                'Brunoetap_Gateway/js/validation-mixin': true
             }
         }
     }

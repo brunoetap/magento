@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Helper;
+namespace Brunoetap\Gateway\Helper;
 
 use Gateway\API\Environment;
 
@@ -10,7 +10,7 @@ use Gateway\API\Environment;
  * @author    Sixbank (and others) 
  * @copyright 2018-2019 Sixbank
  * @license   https://www.gnu.org/licenses/gpl-3.0.pt-br.html GNU GPL, version 3
- * @package   Sixbank\Gateway\Helper
+ * @package   Brunoetap\Gateway\Helper
  */
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
@@ -120,7 +120,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
         \Magento\Checkout\Model\Session $checkoutSession,
         \Magento\Customer\Model\Customer $customer,
         \Magento\Framework\App\Helper\Context $context,
-        \Sixbank\Gateway\Helper\Logger $loggerHelper,
+        \Brunoetap\Gateway\Helper\Logger $loggerHelper,
         \Magento\Framework\App\ProductMetadataInterface $productMetadata,
         \Magento\Framework\Module\ModuleListInterface $moduleList,
         \Magento\Framework\HTTP\Client\Curl $curl,
@@ -1158,7 +1158,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
 
      /**
      * Gets the shipping attribute based on one of the id's from
-     * Sixbank_Gateway_Model_Source_Customer_Address_*
+     * Brunoetap_Gateway_Model_Source_Customer_Address_*
      *
      * @param \Magento\Sales\Model\Order\Address $address
      * @param string $attributeId
@@ -1285,7 +1285,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
 
     public function getModuleInformation()
     {
-        return $this->moduleList->getOne('Sixbank_Gateway');
+        return $this->moduleList->getOne('Brunoetap_Gateway');
     }
 
     public function getMagentoVersion() {
@@ -1318,7 +1318,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     public function getUserAgentDetails()
     {
         $ua = 'Gateway M2/';
-        $ua .= $this->moduleList->getOne('Sixbank_Gateway')['setup_version'];
+        $ua .= $this->moduleList->getOne('Brunoetap_Gateway')['setup_version'];
 
         $ua .= ' (Magento ' . $this->getMagentoVersion() . ')';
         return $ua;

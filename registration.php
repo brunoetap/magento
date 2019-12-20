@@ -1,6 +1,6 @@
 <?php
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Sixbank_Gateway',
+    'Brunoetap_Gateway',
     __DIR__
 );

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Sixbank\Gateway\Plugin;
+namespace Brunoetap\Gateway\Plugin;
 
 class PluginBefore
 {

@@ -3,16 +3,16 @@
     <virtualType name="GatewayLogger" type="Magento\Framework\Logger\Monolog">
         <arguments>
             <argument name="handlers"  xsi:type="array">
-                <item name="debug" xsi:type="object">Sixbank\Gateway\Logger\Handler\Custom</item>
+                <item name="debug" xsi:type="object">Brunoetap\Gateway\Logger\Handler\Custom</item>
             </argument>
         </arguments>
     </virtualType>
-    <type name="Sixbank\Gateway\Helper\Logger">
+    <type name="Brunoetap\Gateway\Helper\Logger">
         <arguments>
             <argument name="customLogger" xsi:type="object">GatewayLogger</argument>
         </arguments>
     </type>
     <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
-        <plugin name="gst_number" type="Sixbank\Gateway\Plugin\Checkout\Model\LayoutProcessor" sortOrder="100"/>
+        <plugin name="gst_number" type="Brunoetap\Gateway\Plugin\Checkout\Model\LayoutProcessor" sortOrder="100"/>
     </type>
 </config>

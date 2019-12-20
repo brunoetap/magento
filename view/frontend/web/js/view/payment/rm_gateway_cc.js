@@ -11,7 +11,7 @@ define(
         rendererList.push(
             {
                 type: 'rm_gateway_cc',
-                component: 'Sixbank_Gateway/js/view/payment/method-renderer/rm_gateway_ccmethod'
+                component: 'Brunoetap_Gateway/js/view/payment/method-renderer/rm_gateway_ccmethod'
             }
         );
         /** Add view logic here if needed */

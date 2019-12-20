@@ -1,12 +1,12 @@
 <?php
-$helper = $this->helper('Sixbank\Gateway\Helper\Data');
-$viewJsPath = $block->getViewFileUrl('Sixbank_Gateway::js/gateway.js');
+$helper = $this->helper('Brunoetap\Gateway\Helper\Data');
+$viewJsPath = $block->getViewFileUrl('Brunoetap_Gateway::js/gateway.js');
 $storeUrl = $helper->getStoreUrl();
 $grandTotal = $helper->getGrandTotal();
 $installments = $helper->getInstallmentQty();
 $validateRg = $helper->getValidateRg();
 $visibleCpf = '1';
-$ccPlaceholderImage = $this->getViewFileUrl('Sixbank_Gateway::images/cc-placeholder.png');
+$ccPlaceholderImage = $this->getViewFileUrl('Brunoetap_Gateway::images/cc-placeholder.png');
 ?>
 <input id="store_url" value="<?php echo $storeUrl ?>"/>
 <script src="<?php echo $viewJsPath;?>"></script>

@@ -7,7 +7,7 @@
                 <comment><![CDATA[Need help?]]></comment>  
                 <field id="ambiente" translate="label comment" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Ambiente</label>                    
-                    <source_model>Sixbank\Gateway\Model\System\Config\Source\Ambiente</source_model>
+                    <source_model>Brunoetap\Gateway\Model\System\Config\Source\Ambiente</source_model>
                 </field>               
                 <field id="merchant_id" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Merchant ID</label>
@@ -40,7 +40,7 @@
                 </field>
                  <field id="acquirer" translate="label comment" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Método de pagamento</label>                    
-                    <source_model>Sixbank\Gateway\Model\System\Config\Source\Ccacquirer</source_model>
+                    <source_model>Brunoetap\Gateway\Model\System\Config\Source\Ccacquirer</source_model>
                 </field>
                  <field id="soft_descriptor" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Soft Descriptor</label>
@@ -52,11 +52,11 @@
                 </field>
                 <field id="antifraud" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Antifraude</label>
-                    <source_model>Sixbank\Gateway\Model\System\Config\Source\Antifraud</source_model>
+                    <source_model>Brunoetap\Gateway\Model\System\Config\Source\Antifraud</source_model>
                 </field>
                 <field id="payment_action" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Ativar Captura Automática</label>
-                    <source_model>Sixbank\Gateway\Model\System\Config\Source\PaymentAction</source_model>
+                    <source_model>Brunoetap\Gateway\Model\System\Config\Source\PaymentAction</source_model>
                 </field>                
                 <field id="smallest_installment" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Parcela mínima</label>
@@ -107,7 +107,7 @@
                 </field>   
                 <field id="acquirer" translate="label comment" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Método de pagamento</label>                    
-                    <source_model>Sixbank\Gateway\Model\System\Config\Source\Ccacquirer</source_model>
+                    <source_model>Brunoetap\Gateway\Model\System\Config\Source\Ccacquirer</source_model>
                 </field>
                  <field id="soft_descriptor" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Soft Descriptor</label>
@@ -119,7 +119,7 @@
                 </field>
                 <field id="antifraud" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Antifraude</label>
-                    <source_model>Sixbank\Gateway\Model\System\Config\Source\Antifraud</source_model>
+                    <source_model>Brunoetap\Gateway\Model\System\Config\Source\Antifraud</source_model>
                 </field>                 
                 <field id="show_min_value" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Valor mínimo para exibição</label>
@@ -141,7 +141,7 @@
                 </field>
                 <field id="acquirer" translate="label comment" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Método de pagamento</label>                    
-                    <source_model>Sixbank\Gateway\Model\System\Config\Source\Slipacquirer</source_model>
+                    <source_model>Brunoetap\Gateway\Model\System\Config\Source\Slipacquirer</source_model>
                 </field>
                 <field id="order_status" translate="label" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>New Order Status</label>
@@ -178,7 +178,7 @@
                 </field>
                 <field id="acquirer" translate="label comment" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Método de pagamento</label>                    
-                    <source_model>Sixbank\Gateway\Model\System\Config\Source\Transferacquirer</source_model>
+                    <source_model>Brunoetap\Gateway\Model\System\Config\Source\Transferacquirer</source_model>
                 </field>
                 <field id="order_status" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>New Order Status</label>

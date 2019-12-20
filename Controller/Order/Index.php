@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Controller\Order;
+namespace Brunoetap\Gateway\Controller\Order;
 
 use Magento\Framework\App\CsrfAwareActionInterface;
 use Magento\Framework\App\Request\InvalidRequestException;
@@ -13,33 +13,33 @@ use Magento\Framework\Controller\ResultFactory;
  * @author    Sixbank (and others) 
  * @copyright 2018-2019 Sixbank
  * @license   https://www.gnu.org/licenses/gpl-3.0.pt-br.html GNU GPL, version 3
- * @package   Sixbank\Gateway\Controller\Notification
+ * @package   Brunoetap\Gateway\Controller\Notification
  */
 class Index extends \Magento\Framework\App\Action\Action implements CsrfAwareActionInterface
 {    
      /**
      * Gateway Helper
      *
-     * @var Sixbank\Gateway\Helper\Data;
+     * @var Brunoetap\Gateway\Helper\Data;
      */ 
     protected $gatewayHelper;
 
     /**
      * Gateway Abstract Model
      *
-     * @var Sixbank\Gateway\Model\Notifications
+     * @var Brunoetap\Gateway\Model\Notifications
      */ 
     protected $gatewayAbModel;
     protected $resultPageFactory;
 
      /**
-     * @param \Sixbank\Gateway\Helper\Data $gatewayHelper
-     * @param \Sixbank\Gateway\Model\Notifications $gatewayAbModel
+     * @param \Brunoetap\Gateway\Helper\Data $gatewayHelper
+     * @param \Brunoetap\Gateway\Model\Notifications $gatewayAbModel
      * @param \Magento\Framework\App\Action\Context $context
      */
     public function __construct(
-        \Sixbank\Gateway\Helper\Data $gatewayHelper,
-        \Sixbank\Gateway\Model\Notifications $gatewayAbModel,
+        \Brunoetap\Gateway\Helper\Data $gatewayHelper,
+        \Brunoetap\Gateway\Model\Notifications $gatewayAbModel,
          \Magento\Framework\App\Action\Context $context,
          \Magento\Framework\View\Result\PageFactory $resultPageFactory
  

@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Model\System\Config\Source;
+namespace Brunoetap\Gateway\Model\System\Config\Source;
 
 /**
  * Class Ccbrand Source model for CC flags
@@ -8,7 +8,7 @@ namespace Sixbank\Gateway\Model\System\Config\Source;
  * @author    Sixbank (and others) 
  * @copyright 2018-2019 Sixbank
  * @license   https://www.gnu.org/licenses/gpl-3.0.pt-br.html GNU GPL, version 3
- * @package   Sixbank\Gateway\Model\System\Config\Source
+ * @package   Brunoetap\Gateway\Model\System\Config\Source
  */
 class Cdacquirer implements \Magento\Framework\Option\ArrayInterface
 {

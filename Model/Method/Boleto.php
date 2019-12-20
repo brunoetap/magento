@@ -1,5 +1,5 @@
 <?php
-namespace Sixbank\Gateway\Model\Method;
+namespace Brunoetap\Gateway\Model\Method;
 
 foreach (glob(dirname(dirname(dirname(__FILE__)))."/vendor/brunopaz/php-sdk-gateway/src/gateway/API/*.php") as $filename)
 {	
@@ -7,7 +7,7 @@ foreach (glob(dirname(dirname(dirname(__FILE__)))."/vendor/brunopaz/php-sdk-gate
     require_once $filename;
 }
 
-//require('D:/xampp7/htdocs/magentoce/app/code/Sixbank/gateway/vendor/autoload.php');
+//require('D:/xampp7/htdocs/magentoce/app/code/Brunoetap/Gateway/vendor/autoload.php');
 
 use \Gateway\API\Credential as Credential;
 use \Gateway\API\Environment as Environment;
@@ -25,7 +25,7 @@ use \Gateway\API\Acquirers as Acquirers;
  * @author    Sixbank (and others) 
  * @copyright 2018-2019 Sixbank
  * @license   https://www.gnu.org/licenses/gpl-3.0.pt-br.html GNU GPL, version 3
- * @package   Sixbank\Gateway\Model\Method
+ * @package   Brunoetap\Gateway\Model\Method
  */
 class Boleto extends \Magento\Payment\Model\Method\AbstractMethod
 {
@@ -43,20 +43,20 @@ class Boleto extends \Magento\Payment\Model\Method\AbstractMethod
     protected $_minAmount = null;
     protected $_maxAmount = null;
     protected $_supportedCurrencyCodes = array('BRL');
-    protected $_infoBlockType = \Sixbank\Gateway\Block\Payment\Info::class;
+    protected $_infoBlockType = \Brunoetap\Gateway\Block\Payment\Info::class;
 
     protected $_debugReplacePrivateDataKeys = ['number', 'exp_month', 'exp_year', 'cvc'];
     /**
      * Gateway Helper
      *
-     * @var Sixbank\Gateway\Helper\Data;
+     * @var Brunoetap\Gateway\Helper\Data;
      */ 
     protected $gatewayHelper;
 
     /**
      * Gateway Abstract Model
      *
-     * @var Sixbank\Gateway\Model\Notifications
+     * @var Brunoetap\Gateway\Model\Notifications
      */ 
     protected $gatewayAbModel;
 
@@ -78,8 +78,8 @@ class Boleto extends \Magento\Payment\Model\Method\AbstractMethod
         \Magento\Payment\Helper\Data $paymentData,        
         \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
         \Magento\Payment\Model\Method\Logger $logger,
-        \Sixbank\Gateway\Helper\Data $gatewayHelper,
-        \Sixbank\Gateway\Model\Notifications $gatewayAbModel,
+        \Brunoetap\Gateway\Helper\Data $gatewayHelper,
+        \Brunoetap\Gateway\Model\Notifications $gatewayAbModel,
         \Magento\Backend\Model\Auth\Session $adminSession,        
         array $data = array()
     ) {
